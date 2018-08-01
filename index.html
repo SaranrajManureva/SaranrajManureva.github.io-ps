@@ -1,0 +1,46 @@
+<head>
+<!-- In your HTML head -->
+<link type="text/css" rel="stylesheet" media="screen" href="jquery-sakura.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- End of your HTML body -->
+<script src="jquery-sakura.min.js"></script>
+<script>
+   
+    // windowLoad
+    $(window).load(function() {
+        $('body').sakura();
+    });
+</script>
+</head>
+<img src="ps.png" id="bg" alt="">
+<script>
+//CSS
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+//jQuery
+<!-- $(window).load(function() {     -->
+
+        <!-- var theWindow        = $(window), -->
+            <!-- $bg              = $("#bg"), -->
+            <!-- aspectRatio      = $bg.width() / $bg.height(); -->
+
+        <!-- function resizeBg() { -->
+
+                <!-- if ( (theWindow.width() / theWindow.height()) < aspectRatio ) { -->
+                    <!-- $bg -->
+                        <!-- .removeClass() -->
+                        <!-- .addClass('bgheight'); -->
+                <!-- } else { -->
+                    <!-- $bg -->
+                        <!-- .removeClass() -->
+                        <!-- .addClass('bgwidth'); -->
+                <!-- } -->
+
+        <!-- } -->
+
+        <!-- theWindow.resize(resizeBg).trigger("resize"); -->
+
+<!-- }); -->
+</script>
