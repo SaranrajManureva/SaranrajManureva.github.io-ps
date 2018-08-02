@@ -31,14 +31,7 @@
         fallSpeed: 3,        
         maxSize: 16,        
         minSize: 11,           
-    });
-	var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if(!isChrome){
-      $('#iframeAudio').remove()
-    }
-	
-	
-    });
+    }); 
 	
 	var AUTOPLAY = false; // A flag to be used in the anonymous function
 
@@ -64,15 +57,10 @@
         // This means we were unsuccessful - this browser doesn't support the autoplay attribute.
     }
 })(); // Invoke anonymous function.
-</script>
-  <div style="visibility:hidden">  
- <audio controls autoplay loop>  
- <source src="ps.mp3" >  
-  <!-- <!-- <!-- Your browser does not support the audio element. --> --> -->
- </audio>   
-  </div> 
-<iframe src="ps.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe> 
+</script> 
+<video controls="" autoplay="" name="media" loop="" style="
+    display: none;
+"><source src="ps.mp3" type="audio/mp3"></video>
 </head>
 <body>
 
