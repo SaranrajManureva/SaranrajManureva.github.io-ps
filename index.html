@@ -21,7 +21,7 @@
     }
   </style>
   <link type="text/css" rel="stylesheet" media="screen" href="jquery-sakura.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="jquery-sakura.min.js"></script>
 <script>
    
@@ -68,9 +68,15 @@
     </audio>
  
 <script>
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if(!isChrome){
-      $('#iframeAudio').remove()
+   var ua = navigator.userAgent; 
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua))
+    {  
+       $('#iframeAudio').remove(); 
+    } 
+    else if(/Chrome/i.test(ua)){  
+    }
+    else
+    {   $('#iframeAudio').remove(); 
     }
 	</script>
 </head>
